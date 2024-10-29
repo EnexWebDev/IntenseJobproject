@@ -1,0 +1,27 @@
+.hr-gradient {
+    background: linear-gradient(to right, #e50909a7 0%, 20%, #091dfa 50%, #1273d4 100%) !important;
+}
+
+input#floatingInput {
+    padding: 1rem 8.75rem !important;
+}
+
+li.breadcrumb-item.active.text-light {
+    color: #fff !important;
+}
+
+.blog-search .top-50 {
+    top: 25% !important;
+    left: 89% !important;
+}
+
+.Categories ul {
+    list-style-type: disc;
+}
+
+.Categories ul li::marker {
+    color: #8ac03c;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color:  #fff !important;
+}

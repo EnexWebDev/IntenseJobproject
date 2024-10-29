@@ -1,0 +1,8 @@
+table tr td:nth-child(4) {
+    color: green;
+    font-weight: bolder;
+}
+table tr td:nth-child(6) {
+    color: green;
+    font-weight: bolder;
+}

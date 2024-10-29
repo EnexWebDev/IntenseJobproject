@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat",
+}
+
+.bg-success {
+    background-color: #8ac03c !important;
+}
+
+.bg-overlay-gray-darkest {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-page {
+    position: relative;
+    overflow: hidden;
+}
+
+nav.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 16;
+}
+
+.section-98 {
+    padding-top: 98px;
+    padding-bottom: 98px;
+}
+
+.hero-header {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: -1px;
+    bottom: 0;
+}
+.hero-header img {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    transform: translate3d(-50%, 0, 0);
+}
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.text-extra-big {
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+.page .text-white {
+    color: #fff !important;
+}
+
+.text-muted {
+    color: #bababa !important;
+}
+
+.btn.btn-primary {
+    background-color: #8ac03c !important;
+    border: none !important;
+}
+
+.btn.btn-primary:hover {
+    background-color: #f2d818 !important;
+    border-color: none !important;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+}

@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.divider {
+    border: 1px solid #fff;
+    height: 1px;
+    width: 50px;
+    margin: 27px auto 34px;
+}

@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.post-vacation {
+    display: block;
+    padding: 25px 27px;
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: 0.35s all ease;
+}
+.post-vacation:hover{ 
+    background: #434349;
+}
+.post-vacation:hover h3{
+    color:#fff !important;
+}
+.post-vacation:hover span{
+    color: #fff !important;
+}
+.blog-search span.icons{
+    color: #8ac03c;
+}

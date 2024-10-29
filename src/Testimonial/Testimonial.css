@@ -1,0 +1,12 @@
+ .hr-gradient {
+     border: 0;
+     height: 1px;
+     background: linear-gradient(to right, white 0%, #bababa 50%, white 100%)
+ }
+
+ @media screen and (max-width:760px) {
+     .carousel-item :nth-child(2) {
+         font-size: 15px;
+     }
+
+ }

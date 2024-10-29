@@ -1,0 +1,74 @@
+.Aboutsection .divide {
+    border: 2px solid #000000;
+    fill: #000000;
+    height: 2px;
+    width: 50px;
+    margin: 20px 10px;
+}
+
+
+.box-member:hover .box-member-wrap {
+    background: #d8d2d473;
+}
+
+.box-member {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    /* Ensure content stays within the container */
+}
+
+.box-member .box-member-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: background 0.3s ease;
+    background: transparent;
+}
+
+.box-member .box-member-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.box-member .box-member-caption .list-inline {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.box-member .box-member-caption .list-inline li {
+    transform: translateY(40px);
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+}
+.box-member:hover .box-member-caption .list-inline li {
+    opacity: 1;
+    transform: translateY(0);
+}
+.counterPage .divider-vertical{
+    width: 2px;
+    height: 20px;
+    background: #bababa;
+}
+.counterPage .divider{
+    margin: 23px 34px;
+}
+.Contactpage .w-50{
+    width: 40% !important;
+}
