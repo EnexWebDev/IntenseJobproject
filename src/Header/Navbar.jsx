@@ -1,12 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { useState, useEffect } from 'react'
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
     return (
         <>
             <header>
-                <nav className="navbar navbar-expand-lg bg-dark py-3">
+                <nav className={`navbar navbar-expand-lg py-3 ${scrolled ? 'scrolled' : ''}`}>
                     <div className="container px-4">
                         <a className="navbar-brand text-light lead display-5 fs-2 fw-bold" href="#">INTENSE</a>
 
@@ -48,7 +59,8 @@ const Navbar = () => {
                                         <li><Link className="dropdown-item" to={"/carrer-starts-here"}>Your Career Starts Here</Link></li>
                                         <li><Link className="dropdown-item" to={"/ResumePage"}>Resume Page</Link></li>
                                         <li><Link className="dropdown-item" to={"/Project Manager"}>Project Manager</Link></li>
-                                        <li><Link className="dropdown-item" to={""}>Contact Us</Link></li>
+                                        <li><Link className="dropdown-item" to={"/Our-FAQ-page"}>FAQ</Link></li>
+                                        <li><Link className="dropdown-item" to={"/Contact-us-page"}>Contact Us</Link></li>
                                     </ul>
                                 </li>
 
@@ -58,14 +70,14 @@ const Navbar = () => {
                             </ul>
 
                             <div className="d-lg-flex">
-                                <Link className="nav-link text-light fw-semibold fs-6 text-white link-underline-info mx-lg-3" to={'/Loginpage'}>Login</Link>
+                                <Link className="nav-link text-light fw-semibold fs-6 text-white link-underline-info mx-lg-3 mb-3" to={'/Loginpage'}>Login</Link>
                                 <span className='text-light fw-semibold fs-6 d-none d-lg-inline'>or</span>
                                 <Link className="nav-link text-light fw-semibold fs-6 text-white link-underline-info mx-lg-3" to={'/register-login'}>Register</Link>
                             </div>
                         </div>
                     </div>
                 </nav>
-
+                
 
             </header>
 

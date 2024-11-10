@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Envelope, Facebook, Inbox, Linkedin, Mailbox, PhoneLandscape, Twitter } from 'react-bootstrap-icons'
 import { FaGooglePlus } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+
 import Footer from '../../Footer/footer'
+import Typetextwriter from '../Animations/Typetextwriter'
+import { useEffect } from 'react'
 const Resume = () => {
+  const [loaded, setloaded] = useState(false)
+
+  useEffect(() => {
+    setloaded(true)
+  }, [])
+
   return (
     <div>
       <div className='hero-section'>
@@ -28,14 +37,14 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <div className=' col-lg-12 container-fluid'>
-        <div className='row py-lg-5 '>
+      <div className=' col-lg-12 container-fluid '>
+        <div className='row py-lg-5 py-4'>
           <div className='col'>
             <div>
-              <img src={"img/resumepagerep.jpg"} alt="" />
+              <img src={"img/resumepagerep.jpg"} alt="" className=' img-fluid mb-3' />
             </div>
             <span>
-              <div class="text-center my-lg-4">
+              <div class="text-center my-lg-4 mb-3">
                 <button class="btn btn-primary element-fullwidth" type="button" style={{ minWidth: "250px", minHeight: "50px" }}><Link to={'/jobs'}>GET IN TOUCH</Link></button>
               </div>
             </span>
@@ -69,8 +78,8 @@ const Resume = () => {
             </ul>
           </div>
 
-          <div className='col-8'>
-            <div className=' mb-4'>
+          <div className='col-lg-8'>
+            <div className='mb-4'>
               <h3>John Doe</h3>
               <p>Senior advisor for an independently owned financial planning company Intense</p>
             </div>
@@ -78,36 +87,39 @@ const Resume = () => {
               <p>John is a senior advisor for a number of financial planning companies. He has previously owned a financial consulting company in the USA with offices in multiple jurisdictions over the world. According to his own words, working as a financial advisor gives him the ability to advise international business clients living worldwide while also increasing his experience.</p>
             </div>
             <div className='fs-3 mb-4'>
-              <p>
-                My job is to help professionals achieve their financial goals whilst having adequate protection along the way. I do this by tailor making financial solutions that suit my clients' individual needs.</p>
-            </div>
-            <div className=' row justify-content-center py-lg-3'>
-              <div className='col-6 col-md-3'>
-                <a className='thumbnail' href='img/resume.jpg'>
-                  <figure>
-                    <span> <img src={"img/resume.jpg"} alt="" /></span>
-                  </figure>
-                </a>
-              </div>
-              <div className='col-6 col-md-3'>
-                <a className='thumbnail' href='img/resume.jpg'>
-                  <figure>
-                    <span> <img src={"img/resume.jpg"} alt="" /></span>
-                  </figure>
-                </a>
-              </div>
-              <div className='col-6 col-md-3'>
+              <Typetextwriter text="myy job is to help professionals achieve their financial goals whilst having adequate protection along the way. I do this by tailor making financial solutions that suit my clients' individual needs." />
 
-                <a className='thumbnail' href='img/resume.jpg'>
+            </div>
+            <div className={`row justify-content-center py-lg-3 ${loaded ? 'loaded' : ''}`}>
+              <div className='col-6 col-md-3'>
+                <a className='thumbnail'>
+                  <span className='position-absolute text-dark mx-4 text-black-50'>Hover to view ?</span>
                   <figure>
-                    <span> <img src={"img/resume.jpg"} alt="" /></span>
+                    <span> <img src={"img/resume.jpg"} alt="" className=' img-fluid' /></span>
                   </figure>
                 </a>
               </div>
               <div className='col-6 col-md-3'>
-                <a className='thumbnail' href='img/resume.jpg'>
+                <a className='thumbnail'>
+                  <span className='position-absolute text-dark mx-4 text-black-50'>Hover to view ?</span>
                   <figure>
-                    <span> <img src={"img/resume.jpg"} alt="" /></span>
+                    <span> <img src={"img/resume.jpg"} alt="" className=' img-fluid' /></span>
+                  </figure>
+                </a>
+              </div>
+              <div className='col-6 col-md-3'>
+                <a className='thumbnail'>
+                  <span className='position-absolute text-dark mx-4 text-black-50'>Hover to view ?</span>
+                  <figure>
+                    <span> <img src={"img/resume.jpg"} alt="" className=' img-fluid' /></span>
+                  </figure>
+                </a>
+              </div>
+              <div className='col-6 col-md-3'>
+                <a className='thumbnail'>
+                  <span className='position-absolute text-dark mx-4 text-black-50'>Hover to view ?</span>
+                  <figure>
+                    <span> <img src={"img/resume.jpg"} alt="" className=' img-fluid' /></span>
                   </figure>
                 </a>
               </div>
@@ -116,22 +128,22 @@ const Resume = () => {
         </div>
       </div>
       <div className=' container-fluid py-lg-5  bg-body-tertiary'>
-        <div className=' container py-lg-5 '>
+        <div className=' container py-lg-5  py-4'>
           <div className=' d-lg-flex justify-content-center gap-4 mb-3'>
-            <div className=' col-1'>
+            <div className=' col-lg-1'>
               <div className=''>
-                <span>2009</span>
+                <span className=' fw-bold fst-italic'>2009</span>
               </div>
             </div>
             <span>
-              <h5 className=' fw-semi-bold fs-5 '>Bestselling Author</h5>
+              <h5 className=' fw-semi-bold fs-5'>Bestselling Author</h5>
               <p className='lead fs-6'>John is a #1 New York Times bestselling author. With more than 1 million copies collectively in print, his seven books on personal finance have been translated into several languages and educated countless people worldwide. The Truth About Money was recognized with an Excellence in Financial Literacy Education (EIFLE) Book of the Year Award from the Institute for Financial Literacy (March 2007), a Gold Medal Axiom Award (March 2008).</p>
             </span>
           </div>
           <div className=' d-lg-flex justify-content-center gap-4 mb-3'>
-            <div className=' col-1'>
+            <div className=' col-lg-1'>
               <div className=''>
-                <span>2015</span>
+                <span className='fw-bold fst-italic'>2015</span>
               </div>
             </div>
             <span>
@@ -142,7 +154,7 @@ const Resume = () => {
           <div className=' d-lg-flex justify-content-center gap-4 mb-3'>
             <div className=' col-1'>
               <div className=''>
-                <span>2016</span>
+                <span className='fw-bold fst-italic'>2016</span>
               </div>
             </div>
             <span>
@@ -153,7 +165,7 @@ const Resume = () => {
           <div className=' d-lg-flex justify-content-center gap-4'>
             <div className=' col-1'>
               <div className=''>
-                <span>2017</span>
+                <span className='fw-bold fst-italic'>2017</span>
               </div>
             </div>
             <span>
@@ -164,10 +176,10 @@ const Resume = () => {
         </div>
       </div>
       <div className='hero-section'>
-        <div className='header-content text-center Container'>
+        <div className='header-content text-center Container '>
           <div className='bg-success'>
             <div className='container section-98'>
-              <div className='d-flex justify-content-sm-center gap-5'>
+              <div className='d-lg-flex justify-content-sm-center gap-5'>
                 <div className=''>
                   <p className='text-white fw-semibold fs-2'>Hire a professional financial advisor in a couple of clicks!</p>
                 </div>
@@ -183,7 +195,7 @@ const Resume = () => {
 
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -38,12 +38,12 @@ const CarrerPage = () => {
                         <div>
                             <img src={"img/Sticker1.png"} alt="" className='figure-img' width={60} />
                             <div className=''>
-                                <img src={"img/logo (1).png"} alt="" className='figure-img' width={300} />
+                                <img src={"img/logo (1).png"} alt="" className='figure-img' width={200} />
                             </div>
                         </div>
                         <h2 className='display-5 lead fw-semibold'></h2>
                         <p className='divider border-black'></p>
-                        <p className=''>Take a job opportunity of a lifetime – join the team of TemplateMonster. Located in New York, this company cherishes active tech savvies willing to work on projects of any type and complexity. If you are enthusiastic about tech innovations and ready to make impactful decisions, feel free to send your CV. The company is interested in hiring professionals for a long term and also provides a remote work opportunity.</p>
+                        <p className='col-12  d-inline-block'>Take a job opportunity of a lifetime – join the team of TemplateMonster. Located in New York, this company cherishes active tech savvies willing to work on projects of any type and complexity. If you are enthusiastic about tech innovations and ready to make impactful decisions, feel free to send your CV. The company is interested in hiring professionals for a long term and also provides a remote work opportunity.</p>
                     </div>
                 </div>
                 <div className=' row py-lg-5'>
@@ -177,10 +177,9 @@ const CarrerPage = () => {
             </div>
             <div className='container-fluid'>
                 <div className='row gap-5'>
-                    <div className='Contactpage py-lg-5 col-8'>
-                        <div className=''>
-                            <h2 className='lead display-2 l text-light-emphasis'>Get In Touch</h2>
-
+                    <div className='Contactpage py-lg-5 col-lg-8 col-12 py-5'>
+                        <div className='col-lg'>
+                            <h2 className='lead display-2 mx-3 mx-lg-0 text-light-emphasis'>Get In Touch</h2>
                         </div>
                         <div className=' container'>
                             <div className=''>

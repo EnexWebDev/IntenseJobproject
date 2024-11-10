@@ -30,85 +30,78 @@ const Signup = () => {
         </div>
 
 
-        <div className='sign_in  m-auto w-50 mt-5 px-4  py-lg-5'>
-          <div className=' container'>
-            <h3 className='lead display-5 opacity-100  text-lg-center fw-bold'> Sign In</h3>
-            <p className="divider border-black" />
+        <div className="sign_in m-auto mt-5 px-3 px-lg-4 py-4 py-lg-5 container">
+          <div className="mx-auto" style={{ maxWidth: '500px' }}>
+            <h3 className="display-6 text-center fw-bold mb-4">Sign Up</h3>
 
-            <div className=' tab-class text-center' data-wow-delay="0.1s">
-              <ul className=' nav nav-pills d-inline-flex justify-content-center'>
-                <div className='d-flex gap-4 py-lg-4'>
-                  <li className=' nav-item'>
-                    <a className='active text-decoration-none nav-link' data-bs-toggle="pill" href='#tab-1'>
-                      <h2 className='lead fs-4'> Login</h2>
-                    </a>
-                  </li>
-                  <h1>/</h1>
-                  <li className=' nav-item'>
-                    <a className=' text-decoration-none nav-link' data-bs-toggle="pill" href='#tab-2'>
-                      <h2 className='lead fs-4'>SignUp </h2>
-                    </a>
-                  </li>
-                </div>
+            {/* Tabs for Login and SignUp */}
+            <div className="tab-class text-center" data-wow-delay="0.1s">
+              <ul className="nav nav-pills d-inline-flex justify-content-center mb-4">
+
+                <li className="nav-item">
+                  <a className="nav-link text-decoration-none" data-bs-toggle="pill" href="#tab-1">
+                    <h2 className="lead fs-5">Sign Up</h2>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active text-decoration-none" data-bs-toggle="pill" href="#tab-2">
+                    <h2 className="lead fs-5">Login</h2>
+                  </a>
+                </li>
               </ul>
             </div>
-            <form className='tab-content'>
-              <div id='tab-1' className=' tab-pane fade show p-0 active'>
-                <div>
-                  <label className=' form-label'>Name:</label>
-                  <div className="mb-4">
-                    <input type="email" className="form-control"></input>
-                  </div>
+
+            <form className="tab-content">
+              {/*  SignUp Form*/}
+              <div id="tab-1" className="tab-pane fade p-0">
+                <div className="mb-3">
+                  <label className="form-label">Username or Email:</label>
+                  <input type="email" className="form-control" required />
                 </div>
-                <div>
-                  <label htmlFor="" className='form-label'>Email:</label>
-                  <div className="mb-4">
-                    <input type="email" name='email' className="form-control mail-validation" placeholder='input your email' required></input>
-                  </div>
+                <div className="mb-3">
+                  <label className="form-label">Password:</label>
+                  <input type="password" className="form-control" required />
                 </div>
-                <div>
-                  <label className='form-label'>Password:</label>
-                  <div className="mb-4">
-                    <input type='password' className="form-control"></input>
-                  </div>
-                </div>
-                <div>
-                  <label className='form-label'>Confirm Password:</label>
-                  <div className="mb-3">
-                    <input type="email" className="form-control"></input>
-                  </div>
-                </div>
-                <div className=' py-4'>
-                  <button className="btn btn-primary py-lg-3 w-100" style={{}}>
-                    <span className='lead fs-4'>SIGN IN</span>
+                <div className="py-3">
+                  <button type="submit" className="btn btn-primary w-100 rounded-pill">
+                    <span className="lead fs-5">Sign Up</span>
                   </button>
                 </div>
               </div>
-              <div id='tab-2' className=' tab-pane fade show p-0 '>
-                <div>
-                  <div className="mb-4">
-                    <label className=' form-label'>Username or e-mail:</label>
-                    <input type="email" className="form-control"></input>
-                  </div>
-                </div>
 
-                <div className="mb-4">
-                  <label className='form-label'>Password:</label>
-                  <input type='password' className="form-control"></input>
+
+              {/* Login Form */}
+
+              <div id="tab-2" className="tab-pane fade show active p-0">
+                <div className="mb-3">
+                  <label className="form-label">Name:</label>
+                  <input type="text" className="form-control" required />
+                  <div className="invalid-feedback">The name field is required.</div>
                 </div>
-                <div className=' py-4'>
-                  <button className="btn btn-primary py-lg-3 w-100" style={{}}>
-                    <span className='lead fs-4'>SIGN IN</span>
+                <div className="mb-3">
+                  <label className="form-label">Email:</label>
+                  <input type="email" name="email" className="form-control" placeholder="Enter your email" required />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label">Password:</label>
+                  <input type="password" className="form-control" required />
+                </div>
+                <div className="mb-3">
+                  <label className="form-label">Confirm Password:</label>
+                  <input type="password" className="form-control" required />
+                </div>
+                <div className="py-3">
+                  <button type="submit" className="btn btn-primary w-100 rounded-pill">
+                    <span className="lead fs-5">Sign In</span>
                   </button>
                 </div>
               </div>
             </form>
           </div>
-
-
         </div>
+
         <Footer />
-       
+
       </div>
     </div>
   )

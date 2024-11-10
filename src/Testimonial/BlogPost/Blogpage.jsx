@@ -33,14 +33,14 @@ const Blogpage = () => {
           </div>
         </div>
 
-        <div className='d-lg-flex gap-5 py-lg-5 my-lg-5 container overflow-hidden'>
-          <div className='col-4'>
-            <div className='row'>
+        <div className='d-lg-flex gap-5 py-lg-5 my-lg-5 py-5 container overflow-hidden'>
+          <div className='col-lg-4 mb-4'>
+            <div className='row mb-4'>
               <ReactPlayer
                 className='react-player'
                 url={"https://youtu.be/-AhmuMqZB0s"} />
             </div>
-            <div class=" card  mb-4" style={{ maxWidth: '617px ' }}>
+            <div class=" card mb-4" style={{ maxWidth: '617px ' }}>
               <div class=" card-body shadow">
                 <div class="btn-group my-2 card-title">
                   <a href="#" class="btn btn-primary my-3">
@@ -74,7 +74,7 @@ const Blogpage = () => {
               </div>
             </div>
           </div>
-          <div className='col-4'>
+          <div className='col-lg-4 mb-4'>
             <div className=''>
               <div class="card shadow-sm" style={{ maxWidth: '617px ' }}>
                 <div className="card-body " >
@@ -178,7 +178,7 @@ const Blogpage = () => {
                   <li>September 2017 (25)</li>
                 </ul>
               </div>
-              <div className=''>
+              <div className='mb-4'>
                 <h2>Tags</h2>
                 <hr className='hr-gradient' />
                 <span className=''>
@@ -187,7 +187,6 @@ const Blogpage = () => {
                   <button className='shadow-sm btn btn-outline-dark'>JOB</button>
                   <button className='shadow-sm btn btn-outline-dark mx-2 my-2'>VACANCY</button>
                   <button className='shadow-sm btn btn-outline-dark'>FINANCE</button>
-
                 </span>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Blog from './BlogPost/Blog'
+import Typetextwriter from '../Pages/Animations/Typetextwriter'
 
 const Testimonial = () => {
     return (
@@ -24,9 +25,8 @@ const Testimonial = () => {
                             <div className="d-lg-flex justify-content-center text-lg-center">
                                 <hr className="hr-gradient" />
                                 <h4 className="m-auto w-75 text-center"> {/* Updated width */}
-                                    <q className="col-lg-8 col-12"> {/* Updated col to col-12 */}
-                                        I just want to thank you for your help. I was so pleased and grateful. Keep up the excellent work. Your site provides the best support I have ever encountered.
-                                    </q>
+                                    <Typetextwriter text={"I  just want to thank you for your help. I was so pleased and grateful. Keep up the excellent work. Your site provides the best support I have ever encountered.  " } className="col-lg-8 col-12"  speed={70}/> {/* Updated col to col-12 */}
+
                                     <hr className="hr-gradient" />
                                 </h4>
                             </div>

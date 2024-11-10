@@ -1,26 +1,36 @@
  .thumbnail {
-    display: inline-block;
-    position: relative;
-    cursor: zoom-in;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+     display: inline-block;
+     position: relative;
+     overflow: hidden;
+     position: relative;
+     cursor: zoom-in;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
 
  .thumbnail figure {
-    margin: 0;
-}
+     margin: 0;
+ }
 
-.thumbnail img {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
+ .thumbnail img {
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: transform 0.3s ease;
+     transform: translateX(-100%);
+     transition: transform 1s ease;
+ }
 
-.thumbnail:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
-}
+ .thumbnail:hover {
+     transform: scale(1.05);
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1);
+ }
 
-.thumbnail:hover img {
-    transform: scale(1.05);
-}
+ .thumbnail:hover img {
+     transform: scale(1.05);
+ }
+
+
+ .thumbnail.loaded img {
+     transform: translateX(0);
+    
+ }

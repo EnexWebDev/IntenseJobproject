@@ -22,6 +22,9 @@ import About from './Pages/About/About'
 import Resume from './Pages/Resume Page/Resume'
 import CarrerPage from './Pages/Carrer-starts-here/CarrerPage'
 import Projectmanger from './Pages/ProjectManger/Projectmanger'
+import { FaW } from 'react-icons/fa6'
+import FAQ from './Pages/FAQ/FAQ'
+import Contact from './Pages/Contactpage/Contact'
 
 function App() {
   return (
@@ -36,8 +39,10 @@ function App() {
         <Route path='/Loginpage' element={<Login />}></Route>
         <Route path='/register-login' element={<Signup />}></Route>
         <Route path="/AboutUs" element={<About />} />
+        <Route path='/Contact-us-page' element={<Contact/>}></Route>
         <Route path='/carrer-starts-here' element = {<CarrerPage/>}/>
         <Route path='/Project Manager' element ={<Projectmanger/>}></Route>
+        <Route path='/Our-FAQ-page' element={<FAQ/>}></Route>
         
       </Routes>
 

@@ -188,7 +188,7 @@ const JobPost = () => {
 
                     </div>
                     <div className=' d-lg-flex py-5 gap-5 text-center text-lg-start '>
-                        <button class=" btn btn-primary element-fullwidth" type="button"
+                        <button class=" btn btn-primary element-fullwidth mb-3 mb-lg-0 " type="button"
                             style={{ maxWidth: "200px", minWidth: "180px", minHeight: "50px" }}>DOWNLOAD
                             LOGO</button>
                         <button class=" btn btn-outline-warning element-fullwidth" type="button"

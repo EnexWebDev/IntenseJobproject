@@ -18,7 +18,7 @@ const About = () => {
     <>
       <div className='Aboutsection'>
         <div className='hero-section'>
-          <div className='hero-content'>
+          <div className='hero-content '>
             <img src={"img/Quiz.jpg"} alt="img not found" />
           </div>
           <div className='header-content text-center Container'>
@@ -43,7 +43,7 @@ const About = () => {
 
         <div className=' container-fluid py-lg-5'>
           <div className='row justify-content-center py-lg-5'>
-            <div className='col'>
+            <div className=' col-lg'>
               <div>
                 <h2 className=' display-5 lead  fw-bold'>
                   Who We Are
@@ -57,14 +57,14 @@ const About = () => {
                 </p>
                 <p>The range of our services includes not only free access to the list of America’s featured and popular jobs but also additional support in the job search. Start building your career with us today!</p>
               </span>
-              <button class=" btn btn-primary element-fullwidth shadow-lg" type="button"
+              <button class=" btn btn-primary element-fullwidth shadow-lg mb-4" type="button"
                 style={{ maxWidth: "200px", minWidth: "180px", minHeight: "50px" }}>LEARN MORE
               </button>
             </div>
 
-            <div className='col'>
-              <div className=' img-fluid my-lg-3'>
-                <img src={"img/aboutpage.jpg"} alt="" />
+            <div className='col-lg'>
+              <div className='my-lg-3 mb-4'>
+                <img src={"img/aboutpage.jpg"} alt="" className='img-fluid' />
               </div>
             </div>
           </div>
@@ -113,121 +113,123 @@ const About = () => {
             <h2 className='lead display-5 opacity-100 fw-bold'> Our Team</h2>
             <p className="divider border-black" />
           </div>
-          <div className=' row justify-content-center '>
-            <div className='row'>
-              <div className='col'>
-                <div className=' box-member'>
-                  <img src={"img/user-john-doe.jpg"} alt="" />
-                  <h5 className=' fw-bold'>
-                    <Link to={''} className=' text-black'>
-                      John Doe
-                    </Link>
-                    <small className=' text-primary mx-lg-2'>Founder</small>
-                  </h5>
-                  <div className='box-member-wrap'>
-                    <div className='box-member-caption'>
-                      <div className='box-member-caption-inner'>
-                        <ul className=' list-inline list-inline-xs'>
-                          <li className='list-inline-item'>
-                            <Link className=' icon-link'><i><Facebook size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item-'>
-                            <Link><i><Twitter size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item-'>
-                            <Link><i><Google size={40} /></i></Link>
-                          </li>
-                        </ul>
+          <div className=' '>
+            <div className='row justify-content-center'>
+              <div className='row align-content-center align-items-center'>
+                <div className='col-12 col-sm-6 col-lg-3 d-flex justify-content-center'>
+                  <div className=' box-member'>
+                    <img src={"img/user-john-doe.jpg"} alt="" />
+                    <h5 className=' fw-bold'>
+                      <Link to={''} className=' text-black'>
+                        John Doe
+                      </Link>
+                      <small className=' text-primary mx-lg-2'>Founder</small>
+                    </h5>
+                    <div className='box-member-wrap'>
+                      <div className='box-member-caption'>
+                        <div className='box-member-caption-inner'>
+                          <ul className=' list-inline list-inline-xs'>
+                            <li className='list-inline-item'>
+                              <Link className=' icon-link'><i><Facebook size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item-'>
+                              <Link><i><Twitter size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item-'>
+                              <Link><i><Google size={40} /></i></Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className='col'>
-                <div className=' box-member'>
-                  <img src={"img/user-july-mao.jpg"} alt="" />
-                  <h5 className=' fw-bold'>
-                    <Link to={''} className=' text-black'>
-                      July Mao
-                    </Link>
-                    <small className=' text-primary mx-lg-2'>Consultant</small>
-                  </h5>
-                  <div className='box-member-wrap'>
-                    <div className='box-member-caption'>
-                      <div className='box-member-caption-inner'>
-                        <ul className=' list-inline list-inline-xs'>
-                          <li className='list-inline-item'>
-                            <Link className=' icon-link'><i><Facebook size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item-'>
-                            <Link><i><Twitter size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item-'>
-                            <Link><i><Google size={40} /></i></Link>
-                          </li>
-                        </ul>
+                <div className='col-12 col-sm-6 col-lg-3 d-flex justify-content-center'>
+                  <div className=' box-member'>
+                    <img src={"img/user-july-mao.jpg"} alt="" />
+                    <h5 className=' fw-bold'>
+                      <Link to={''} className=' text-black'>
+                        July Mao
+                      </Link>
+                      <small className=' text-primary mx-lg-2'>Consultant</small>
+                    </h5>
+                    <div className='box-member-wrap'>
+                      <div className='box-member-caption'>
+                        <div className='box-member-caption-inner'>
+                          <ul className=' list-inline list-inline-xs'>
+                            <li className='list-inline-item'>
+                              <Link className=' icon-link'><i><Facebook size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item-'>
+                              <Link><i><Twitter size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item-'>
+                              <Link><i><Google size={40} /></i></Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className='col'>
-                <div className=' box-member'>
-                  <img src={"img/user-bernard-show.jpg"} alt="" />
-                  <h5 className=' fw-bold'>
-                    <Link to={''} className=' text-black'>
-                      Bernard Show
-                    </Link>
-                    <small className=' text-primary mx-lg-2'>
-                      Co-Founder
-                    </small>
-                  </h5>
-                  <div className='box-member-wrap'>
-                    <div className='box-member-caption'>
-                      <div className='box-member-caption-inner'>
-                        <ul className=' list-inline list-inline-xs'>
-                          <li className='list-inline-item'>
-                            <Link className=' icon-link'><i><Facebook size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item'>
-                            <Link>
-                              <i><Twitter size={40} /></i>
-                            </Link>
-                          </li>
-                          <li className='list-inline-item'>
-                            <Link>
-                              <i><Google size={40} /></i>
-                            </Link>
-                          </li>
-                        </ul>
+                <div className='col-12 col-sm-6 col-lg-3 d-flex justify-content-center'>
+                  <div className=' box-member'>
+                    <img src={"img/user-bernard-show.jpg"} alt="" />
+                    <h5 className=' fw-bold'>
+                      <Link to={''} className=' text-black'>
+                        Bernard Show
+                      </Link>
+                      <small className=' text-primary mx-lg-2'>
+                        Co-Founder
+                      </small>
+                    </h5>
+                    <div className='box-member-wrap'>
+                      <div className='box-member-caption'>
+                        <div className='box-member-caption-inner'>
+                          <ul className=' list-inline list-inline-xs'>
+                            <li className='list-inline-item'>
+                              <Link className=' icon-link'><i><Facebook size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item'>
+                              <Link>
+                                <i><Twitter size={40} /></i>
+                              </Link>
+                            </li>
+                            <li className='list-inline-item'>
+                              <Link>
+                                <i><Google size={40} /></i>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className='col'>
-                <div className=' box-member'>
-                  <img src={"img/user-ronald-oswald.jpg"} alt="" />
-                  <h5 className=' fw-bold'>
-                    <Link to={''} className=' text-black'>
-                      John Doe
-                    </Link>
-                    <small className=' text-primary mx-lg-2'>Recruiter</small>
-                  </h5>
-                  <div className='box-member-wrap'>
-                    <div className='box-member-caption'>
-                      <div className='box-member-caption-inner'>
-                        <ul className=' list-inline list-inline-xs'>
-                          <li className='list-inline-item'>
-                            <Link className=' icon-link'><i className=''><Facebook size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item-'>
-                            <Link><i><Twitter size={40} /></i></Link>
-                          </li>
-                          <li className='list-inline-item-'>
-                            <Link><i><Google size={40} /></i></Link>
-                          </li>
-                        </ul>
+                <div className='col-12 col-sm-6 col-lg-3 d-flex justify-content-center'>
+                  <div className=' box-member'>
+                    <img src={"img/user-ronald-oswald.jpg"} alt="" />
+                    <h5 className=' fw-bold'>
+                      <Link to={''} className=' text-black'>
+                        John Doe
+                      </Link>
+                      <small className=' text-primary mx-lg-2'>Recruiter</small>
+                    </h5>
+                    <div className='box-member-wrap'>
+                      <div className='box-member-caption'>
+                        <div className='box-member-caption-inner'>
+                          <ul className=' list-inline list-inline-xs'>
+                            <li className='list-inline-item'>
+                              <Link className=' icon-link'><i className=''><Facebook size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item-'>
+                              <Link><i><Twitter size={40} /></i></Link>
+                            </li>
+                            <li className='list-inline-item-'>
+                              <Link><i><Google size={40} /></i></Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -235,14 +237,15 @@ const About = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
-      <div className='counterPage bg-black'>
-        <div className=' container'>
-          <div className=' row justify-content-center  align-items-center py-lg-5'>
-            <div className=' col-lg-12'>
+      <div className='counterPage bg-black m-auto'>
+        <div className='container'>
+          <div className=' row justify-content-center align-items-center py-lg-5'>
+            <div className=''>
               <div className='d-lg-flex align-items-center py-lg-5 gap-5 overflow-hidden'>
-                <div className=' col-lg-3 '>
+                <div className='col-12 col-lg-3 col-sm-6 align-items-center'>
                   <div className='counter-type-1'>
                     <span className=''> <PiNotepad size={70} className=' text-success' /></span>
                     <div className=' offset-top-10'>
@@ -253,7 +256,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className=' col-lg-3'>
+                <div className='col-12 col-lg-3 col-sm-6 align-items-center'>
                   <div className='counter-type-2'>
                     <span className=''> <FaSmile size={50} className=' text-primary' /></span>
                     <div className=' offset-top-10'>
@@ -263,7 +266,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className=' col-lg-3'>
+                <div className='col-12 col-lg-3 col-sm-6'>
                   <div className='counter-type-3'>
                     <span className=''><People size={50} className='text-warning' /></span>
                     <div className=' offset-top-10'>
@@ -274,7 +277,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className=' col-lg-3'>
+                <div className=' col-12 col-lg-3 col-sm-6 align-items-center'>
                   <div className='counter-type-4'>
                     <span className=''> <Folder size={50} className=' text-danger' /></span>
                     <div className=' offset-top-10'>
@@ -289,8 +292,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className=''>
-        <div className='Contactpage py-lg-5 m-auto w-75 mt-5 px-4'>
+      <div className='Contactpage py-lg-5 m-auto  mt-5 px-4'>
+        <div className="mx-auto" style={{ maxWidth: '500px' }}>
           <div className=' container-fluid'>
             <h2 className='lead display-2 l text-light-emphasis text-center'>Contact Us</h2>
             <p className='divider border-black' />
@@ -335,8 +338,9 @@ const About = () => {
             </button>
           </div>
         </div>
-        <Footer/>
+
       </div>
+      <Footer />
     </>
   )
 }

@@ -2,14 +2,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: "Montserrat",
+    font-family: "Montserrat"
 }
+
+.nav-link {
+    position: relative;
+}
+
+
+
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.navbar {
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 0.3s ease;
+}
+@media screen and (max-width:420px){
+    .navbar{
+        background: #000;
+    
+    }
+}
+
+.navbar.scrolled {
+    background-color: #343a40;
+}
+
 
 .bg-success {
     background-color: #8ac03c !important;
@@ -39,24 +80,27 @@ nav.navbar {
 
 .hero-header {
     position: absolute;
-    top: 0;
+    top: -47px;
     left: -1px;
     right: -1px;
-    bottom: 0;
+    bottom: 0px;
 }
+
 .hero-header img {
     position: relative;
     left: 50%;
-    bottom: 0;
+    bottom:-47px;
     background-position: center;
     background-repeat: no-repeat;
     display: block;
     transform: translate3d(-50%, 0, 0);
 }
+
 .header-content {
     position: relative;
     z-index: 1;
 }
+
 h4 {
     margin-bottom: 16px;
     font-size: 24px;
@@ -85,10 +129,66 @@ h4 {
     background-color: #f2d818 !important;
     border-color: none !important;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: none;
     position: absolute;
 }
-.nav-item:hover .dropdown-menu{
+
+.nav-item:hover .dropdown-menu {
     display: block;
+}
+
+@keyframes shake {
+
+    0%,
+    10% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    70% {
+        transform: translateX(-2px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(2px);
+    }
+}
+
+.shake-animation {
+    animation: shake 0.5s ease-in-out 1;
+}
+
+.shake-hover:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up-animation {
+    animation: slideUp 1s ease-out;
+}
+.btn-hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.btn-hover-scale:hover {
+    transform: scale(1.05);
 }
