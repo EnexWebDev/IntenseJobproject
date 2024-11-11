@@ -12,20 +12,20 @@ import "./Carrer_page/Carrer.css"
 import './Footer/Footer.css'
 import "./Testimonial/Testimonial.css"
 import { Route, Router, Routes } from 'react-router-dom'
-import JobsData from './TableData/JobsData.jsx'
-import Home from './Home.jsx'
-import JobPost from './Testimonial/PostedJobs/JobPost.jsx'
-import Blogpage from './Testimonial/BlogPost/Blogpage.jsx'
-import Login from './Registration/Login.jsx'
-import Signup from './Registration/signup.jsx'
-import About from './Pages/About/About.jsx'
-import Resume from './Pages/Resume Page/Resume.jsx'
-import CarrerPage from './Pages/Carrer-starts-here/CarrerPage.jsx'
-import Projectmanger from './Pages/ProjectManger/Projectmanger.jsx'
+import JobsData from './TableData/JobsData'
+import Home from './Home'
+import JobPost from './Testimonial/PostedJobs/JobPost'
+import Blogpage from './Testimonial/BlogPost/Blogpage'
+import Login from './Registration/Login'
+import Signup from './Registration/Signup'
+import About from './Pages/About/About'
+import Resume from './Pages/Resume Page/Resume'
+import CarrerPage from './Pages/Carrer-starts-here/CarrerPage'
+import Projectmanger from './Pages/ProjectManger/Projectmanger'
 import { FaW } from 'react-icons/fa6'
-import FAQ from './Pages/FAQ/FAQ.jsx'
-import Contact from './Pages/Contactpage/Contact.jsx'
-import ScrollTotop from "./Pages/Animations/ScrollTotop.jsx"
+import FAQ from './Pages/FAQ/FAQ'
+import Contact from './Pages/Contactpage/Contact'
+import ScrollTotop from "./Pages/Animations/ScrollTotop"
 
 function App() {
   return (
