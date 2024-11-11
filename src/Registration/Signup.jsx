@@ -40,12 +40,12 @@ const Signup = () => {
 
                 <li className="nav-item">
                   <a className="nav-link text-decoration-none" data-bs-toggle="pill" href="#tab-1">
-                    <h2 className="lead fs-5">Sign Up</h2>
+                    <span className="lead fs-5">Login</span>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active text-decoration-none" data-bs-toggle="pill" href="#tab-2">
-                    <h2 className="lead fs-5">Login</h2>
+                    <span className="lead fs-5">Sign Up</span>
                   </a>
                 </li>
               </ul>
@@ -92,7 +92,7 @@ const Signup = () => {
                 </div>
                 <div className="py-3">
                   <button type="submit" className="btn btn-primary w-100 rounded-pill">
-                    <span className="lead fs-5">Sign In</span>
+                    <span className="lead fs-5">Sign Up</span>
                   </button>
                 </div>
               </div>

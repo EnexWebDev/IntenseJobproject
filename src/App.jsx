@@ -29,9 +29,8 @@ import ScrollTotop from "./Pages/Animations/ScrollTotop"
 
 function App() {
   return (
-    <>
+    <div className=''>
       <Navbar />
-
       <ScrollTotop />
       <Routes>
         <Route path={'/'} element={<Home />} />
@@ -49,7 +48,7 @@ function App() {
 
       </Routes>
 
-    </>
+    </div>
   )
 }
 export default App

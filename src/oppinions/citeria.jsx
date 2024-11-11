@@ -12,7 +12,7 @@ const Citeria = () => {
           <h2 className='lead display-5 opacity-100 fw-bold'> Why People Choose Us</h2>
           <p className="divider border-black" />
         </div>
-        <div className=' container-fluid'>
+        <div className='container'>
           <div className='justify-content-center text-start row align-items-center '>
             <div className='col-lg-4  text-center text-lg-start'>
               <div className=' d-lg-flex gap-3 align-items-center py-4'>

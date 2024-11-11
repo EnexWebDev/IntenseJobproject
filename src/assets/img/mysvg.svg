@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none">
+  <!-- Briefcase body -->
+  <rect x="4" y="8" width="16" height="12" rx="2" fill="#333333" />
+  <!-- Briefcase handle -->
+  <rect x="8" y="4" width="8" height="4" rx="1" fill="#333333" />
+  <!-- Checkmark -->
+  <path d="M6 13l3 3 6-6" stroke="#4CAF50" stroke-width="2" fill="none" />
+</svg>

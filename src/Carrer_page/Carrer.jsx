@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Carrer = () => {
     return (
-        <div>
+        <div className=''>
             <div className='hero-section'>
                 <div className='hero-content'>
                     <img src={"img/Quiz.jpg"} alt="img not found" />

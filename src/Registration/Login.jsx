@@ -37,12 +37,12 @@ const Login = () => {
                         <ul className="nav nav-pills d-inline-flex justify-content-center mb-4">
                             <li className="nav-item">
                                 <a className="nav-link active text-decoration-none" data-bs-toggle="pill" href="#tab-1">
-                                    <h2 className="lead fs-5">Login</h2>
+                                    <span className="lead fs-5">Sign Up</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-decoration-none" data-bs-toggle="pill" href="#tab-2">
-                                    <h2 className="lead fs-5">Sign Up</h2>
+                                    <span className="lead fs-5">Login</span>
                                 </a>
                             </li>
                         </ul>

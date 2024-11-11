@@ -11,7 +11,7 @@ const Blog = () => {
                     <p className="divider border-black" />
                 </div>
 
-                <div className=' d-lg-flex gap-4'>
+                <div className=' d-lg-flex gap-4 container'>
                     <div>
                         <div className='row'>
                             <ReactPlayer
