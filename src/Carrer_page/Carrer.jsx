@@ -1,5 +1,6 @@
 import React from 'react'
 import Testimonial from '../Testimonial/Testimonial'
+import { Link } from 'react-router-dom'
 
 const Carrer = () => {
     return (
@@ -16,9 +17,11 @@ const Carrer = () => {
                                     <h1 className=' text-white fw-semibold'>Start Building Your Own Career Now</h1>
                                 </div>
                                 <div className='col-lg-4 my-4 my-lg-0'>
-                                    <button class="btn btn-primary element-fullwidth" type="button"
-                                        style={{ maxWidth: "170px", minWidth: "170px", minHeight: "50px" }}>GET STARTED
+                                    <Link to={'/carrer-starts-here'}>
+                                        <button class="btn btn-primary element-fullwidth" type="button"
+                                            style={{ maxWidth: "170px", minWidth: "170px", minHeight: "50px" }}>GET STARTED
                                         </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +29,7 @@ const Carrer = () => {
 
                 </div>
             </div>
-            <Testimonial/>
+            <Testimonial />
         </div>
     )
 }

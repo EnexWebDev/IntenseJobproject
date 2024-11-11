@@ -12,38 +12,41 @@ import "./Carrer_page/Carrer.css"
 import './Footer/Footer.css'
 import "./Testimonial/Testimonial.css"
 import { Route, Router, Routes } from 'react-router-dom'
-import JobsData from './TableData/JobsData'
-import Home from './Home'
-import JobPost from './Testimonial/PostedJobs/JobPost'
-import Blogpage from './Testimonial/BlogPost/Blogpage'
-import Login from './Registration/Login'
-import Signup from './Registration/signup'
-import About from './Pages/About/About'
-import Resume from './Pages/Resume Page/Resume'
-import CarrerPage from './Pages/Carrer-starts-here/CarrerPage'
-import Projectmanger from './Pages/ProjectManger/Projectmanger'
+import JobsData from './TableData/JobsData.jsx'
+import Home from './Home.jsx'
+import JobPost from './Testimonial/PostedJobs/JobPost.jsx'
+import Blogpage from './Testimonial/BlogPost/Blogpage.jsx'
+import Login from './Registration/Login.jsx'
+import Signup from './Registration/signup.jsx'
+import About from './Pages/About/About.jsx'
+import Resume from './Pages/Resume Page/Resume.jsx'
+import CarrerPage from './Pages/Carrer-starts-here/CarrerPage.jsx'
+import Projectmanger from './Pages/ProjectManger/Projectmanger.jsx'
 import { FaW } from 'react-icons/fa6'
-import FAQ from './Pages/FAQ/FAQ'
-import Contact from './Pages/Contactpage/Contact'
+import FAQ from './Pages/FAQ/FAQ.jsx'
+import Contact from './Pages/Contactpage/Contact.jsx'
+import ScrollTotop from "./Pages/Animations/ScrollTotop.jsx"
 
 function App() {
   return (
     <>
       <Navbar />
+
+      <ScrollTotop />
       <Routes>
         <Route path={'/'} element={<Home />} />
-        <Route path='/ResumePage' element={<Resume/>}></Route>
+        <Route path='/ResumePage' element={<Resume />}></Route>
         <Route path={'/jobs'} element={<JobsData />} />
         <Route path='/jobspost' element={<JobPost />} />
         <Route path='Blogpost' element={<Blogpage />} />
         <Route path='/Loginpage' element={<Login />}></Route>
         <Route path='/register-login' element={<Signup />}></Route>
         <Route path="/AboutUs" element={<About />} />
-        <Route path='/Contact-us-page' element={<Contact/>}></Route>
-        <Route path='/carrer-starts-here' element = {<CarrerPage/>}/>
-        <Route path='/Project Manager' element ={<Projectmanger/>}></Route>
-        <Route path='/Our-FAQ-page' element={<FAQ/>}></Route>
-        
+        <Route path='/Contact-us-page' element={<Contact />}></Route>
+        <Route path='/carrer-starts-here' element={<CarrerPage />} />
+        <Route path='/Project Manager' element={<Projectmanger />}></Route>
+        <Route path='/Our-FAQ-page' element={<FAQ />}></Route>
+
       </Routes>
 
     </>
