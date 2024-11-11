@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import Footer from '../../Footer/footer'
+import Footer from '../../Footer/Footer'
 import { Link } from 'react-router-dom'
 const Blog = () => {
     return (

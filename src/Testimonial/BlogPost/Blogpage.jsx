@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import { MdSearch } from 'react-icons/md'
-import Footer from '../../Footer/footer'
+import Footer from '../../Footer/Footer'
 import { Cloud, Pen } from 'react-bootstrap-icons'
 MdSearch
 const Blogpage = () => {

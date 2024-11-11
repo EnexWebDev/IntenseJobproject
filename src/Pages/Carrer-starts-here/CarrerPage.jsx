@@ -1,7 +1,7 @@
 import React from 'react'
 import { Calendar, Calendar2, Clock, Facebook, Tag, Telephone, Twitter, Youtube, } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
-import Footer from '../../Footer/footer'
+import Footer from '../../Footer/Footer'
 import { FaGooglePlus } from 'react-icons/fa'
 import { FaLocationPin } from 'react-icons/fa6'
 

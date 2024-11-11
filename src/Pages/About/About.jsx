@@ -11,7 +11,7 @@ import Navbar from '../../Header/Navbar'
 import { Link } from 'react-router-dom'
 import Counter from '../Counter/Counter';
 import { PiNotepad } from 'react-icons/pi';
-import Footer from '../../Footer/footer';
+import Footer from '../../Footer/Footer';
 
 const About = () => {
   return (

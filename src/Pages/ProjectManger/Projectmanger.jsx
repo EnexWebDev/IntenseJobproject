@@ -1,7 +1,7 @@
 import React from 'react'
 import { Calendar, Calendar2Date, Cash, CashCoin, Clock, Cookie, GeoAltFill, Globe, Kanban, Map, Phone, PinMap, PinMapFill, Tag, UniversalAccess } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
-import Footer from '../../Footer/footer'
+import Footer from '../../Footer/Footer'
 
 const Projectmanger = () => {
     return (

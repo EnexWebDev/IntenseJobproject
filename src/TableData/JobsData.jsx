@@ -4,7 +4,7 @@ import { MdOutlineAirplanemodeActive } from "react-icons/md";
 import { FaFireAlt } from "react-icons/fa";
 import { FaGolfBallTee } from "react-icons/fa6";
 import { PiTidalLogoDuotone } from "react-icons/pi";
-import Footer from '../Footer/footer';
+import Footer from '../Footer/Footer';
 
 const JobsData = () => {
     return (

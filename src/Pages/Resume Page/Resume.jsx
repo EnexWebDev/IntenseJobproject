@@ -3,7 +3,7 @@ import { Envelope, Facebook, Inbox, Linkedin, Mailbox, PhoneLandscape, Twitter }
 import { FaGooglePlus } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-import Footer from '../../Footer/footer'
+import Footer from '../../Footer/Footer'
 import Typetextwriter from '../Animations/Typetextwriter'
 import { useEffect } from 'react'
 const Resume = () => {
