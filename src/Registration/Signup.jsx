@@ -92,7 +92,7 @@ const Signup = () => {
                 </div>
                 <div className="py-3">
                   <button type="submit" className="btn btn-primary w-100 rounded-pill">
-                    <span className="lead fs-5">Sign Up</span>
+                    <span className="lead fs-5">Sig</span>
                   </button>
                 </div>
               </div>
